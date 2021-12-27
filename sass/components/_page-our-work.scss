@@ -1,0 +1,48 @@
+.our-work {
+  padding-top: 0;
+  display: none;
+  @media screen and (min-width:1200px){
+    display: block;
+  }
+} 
+
+.our-work_title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--second-title-color);
+  margin-bottom: 50px;
+}
+
+.our-work_list {
+  display: flex;
+  margin-right: -30px;
+}
+
+.work-list_item {
+  margin-right: 30px;
+  position: relative;
+}
+.work-list_owerlay{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.work-list_text{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--fourth-text-color);
+}
