@@ -18,12 +18,15 @@
 
 .our-work_list {
   display: flex;
-  margin-right: -30px;
 }
 
 .work-list_item {
   margin-right: 30px;
   position: relative;
+  &:last-child{
+    margin-right: 0;
+  }
+
 }
 .work-list_owerlay{
   position: absolute;

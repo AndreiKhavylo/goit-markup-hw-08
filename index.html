@@ -31,7 +31,7 @@
             <ul class="header_list contact list">
                 <li class="contact_item">
                     <a href="mailto:info@devstudio.com" class="contact_mail link">
-                        <svg class="contact_icon" width="19" height="19">
+                        <svg class="contact_icon" width="14" height="10">
                             <use href="./images/icons.svg.svg#icon-mail">
                             </use>
                         </svg>info@devstudio.com</a>
@@ -111,19 +111,34 @@
                 <h2 class="our-work_title">Чем мы занимаемся</h2>
                 <ul class="our-work_list work_list list">
                     <li class="work-list_item">
-                        <img src="./images/work-img-1.jpg" alt="Пишем програмы " width="370" height="294">
+                        <img 
+                        srcset="
+                        ./images/work-img-1.jpg 1x, 
+                        ./images/work-img-1-2x.jpg 2x"
+                        src="
+                        ./images/work-img-1.jpg" alt="Пишем програмы " width="370" height="294">
                         <div class="work-list_owerlay">
                             <p class="work-list_text">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="work-list_item">
-                        <img src="./images/work-img-2.jpg" alt="Мобильное програмированте" width="370" height="294">
+                        <img 
+                        srcset="
+                        ./images/work-img-2.jpg 1x, 
+                        ./images/work-img-2-2x.jpg 2x"
+                        src="
+                        ./images/work-img-2.jpg" alt="Мобильное програмированте" width="370" height="294">
                         <div class="work-list_owerlay">
                             <p class="work-list_text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="work-list_item">
-                        <img src="./images/work-img-3.jpg" alt="Веб дизайн" width="370" height="294">
+                        <img 
+                        srcset="
+                        ./images/work-img-3.jpg 1x, 
+                        ./images/work-img-3-2x.jpg 2x"
+                        src="
+                        ./images/work-img-3.jpg" alt="Веб дизайн" width="370" height="294">
                         <div class="work-list_owerlay">
                             <p class="work-list_text">Дизайнерские решения</p>
                         </div>
@@ -136,8 +151,27 @@
                 <h2 class="command_title">Наша команда</h2>
                 <ul class="command_list person list">
                     <li class="person_item">
-                        <img class="command-img "  src="./images/team-foto-img-1.jpg" alt="Фото учасника команды"
-                            width="450" height="460">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-1.jpg 1x, 
+                                    ./images/team-foto-img-1-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-1-tab-1x.jpg 1x, 
+                                    ./images/team-foto-img-1-tab-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-1-mob-1x.jpg 1x, 
+                                    ./images/team-foto-img-1-mob-2x.jpg 2x"
+                                    media="(min-width:320px)"
+                            >
+                            <img class="command-img "  src="./images/team-foto-img-1.jpg" alt="Фото учасника команды">
+                        </picture>
                         <div class="person_box">
                             <h3 class="person_title">Игорь Демьяненко</h3>
                             <p lang="en" class="person_text">Product Designer</p>
@@ -178,8 +212,27 @@
                         </div>
                     </li>
                     <li class="person_item">
-                        <img class="command-img" src="./images/team-foto-img-2.jpg" alt="Фото учасника команды"
-                            width="450" height="460">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-2.jpg 1x, 
+                                    ./images/team-foto-img-2-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-2-tab-1x.jpg 1x, 
+                                    ./images/team-foto-img-2-tab-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-2-mob-1x.jpg 1x, 
+                                    ./images/team-foto-img-2-mob-2x.jpg 2x"
+                                    media="(min-width:320px)"
+                            >
+                            <img class="command-img" src="./images/team-foto-img-2.jpg" alt="Фото учасника команды">
+                        </picture>
                         <div class="person_box">
                             <h3 class="person_title">Ольга Репина</h3>
                             <p lang="en" class="person_text">Frontend Developer</p>
@@ -220,8 +273,27 @@
                         </div>
                     </li>
                     <li class="person_item">
-                        <img class="command-img" src="./images/team-foto-img-3.jpg" alt="Фото учасника команды"
-                            width="450" height="460">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-3.jpg 1x, 
+                                    ./images/team-foto-img-3-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-3-tab-1x.jpg 1x, 
+                                    ./images/team-foto-img-3-tab-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-3-mob-1x.jpg 1x, 
+                                    ./images/team-foto-img-3-mob-2x.jpg 2x"
+                                    media="(min-width:320px)"
+                            >
+                            <img class="command-img" src="./images/team-foto-img-3.jpg" alt="Фото учасника команды">
+                        </picture>
                         <div class="person_box">
                             <h3 class="person_title">Николай Тарасов</h3>
                             <p lang="en" class="person_text">Marketing</p>
@@ -262,8 +334,27 @@
                         </div>
                     </li>
                     <li class="person_item">
-                        <img class="command-img" src="./images/team-foto-img-4.jpg" alt="Фото учасника команды"
-                            width="450" height="460">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-4.jpg 1x, 
+                                    ./images/team-foto-img-4-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-4-tab-1x.jpg 1x, 
+                                    ./images/team-foto-img-4-tab-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/team-foto-img-4-mob-1x.jpg 1x, 
+                                    ./images/team-foto-img-4-mob-2x.jpg 2x"
+                                    media="(min-width:320px)"
+                            >
+                            <img class="command-img" src="./images/team-foto-img-4.jpg" alt="Фото учасника команды">
+                        </picture>
                         <div class="person_box">
                             <h3 class="person_title">Михаил Ермаков</h3>
                             <p lang="en" class="person_text">UI Designer</p>
@@ -522,10 +613,10 @@
     </div>
     <script src="./js/modal.js"></script>
     <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
 </body> 
