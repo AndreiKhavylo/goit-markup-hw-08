@@ -276,7 +276,7 @@ header {
   align-items: center;
   justify-content: center;
   padding-top: 21px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
@@ -296,6 +296,7 @@ header {
     padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
+    margin-bottom: 0;
   }
 }
 
@@ -396,13 +397,12 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 118px 15px;
+  height: 400px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero_lego {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    height: 600px;
   }
 }
 
@@ -440,20 +440,20 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: -30px;
+    margin-top: -30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .specials_list {
     flex-direction: row;
-    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767.198px) {
   .quality_item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -461,14 +461,14 @@ header {
   .quality_item {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .quality_item {
     width: calc(100% / 4 - 30px);
-    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
@@ -562,7 +562,7 @@ header {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--second-title-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -576,14 +576,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: -30px;
+    margin-top: -30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .command_list {
     flex-direction: row;
-    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
@@ -594,7 +594,7 @@ header {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .person_item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -602,28 +602,24 @@ header {
   .person_item {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .person_item {
     width: calc(100% / 4 - 30px);
-    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
-.person_item
-.person_box {
-  padding-top: 30px;
-  padding-right: auto;
+.person_item .person_box {
+  padding: 30px 32px;
   padding-bottom: 24px;
-  padding-left: auto;
 }
 
 @media screen and (min-width: 1200px) {
-  .person_item
-.person_box {
+  .person_item .person_box {
     padding: 30px 30px;
   }
 }
@@ -695,12 +691,13 @@ header {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--second-title-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .client_title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -708,7 +705,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: -30px;
+  margin-top: -30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -720,7 +717,7 @@ header {
 .company_item {
   width: calc(100% / 2 - 30px);
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -732,12 +729,11 @@ header {
 @media screen and (min-width: 1200px) {
   .company_item {
     width: 170px;
-    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
-.company_item
-.company_link {
+.company_item .company_link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -749,9 +745,7 @@ header {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.company_item
-.company_link:hover, .company_item
-.company_link:focus {
+.company_item .company_link:hover, .company_item .company_link:focus {
   color: var(--accent-color);
   border: 1px solid #2196f3;
 }
@@ -780,6 +774,7 @@ footer {
 @media screen and (min-width: 768px) {
   .footer_box {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -799,13 +794,6 @@ footer {
   .footer_main {
     align-items: center;
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer_main {
-    margin-left: 76px;
-    margin-right: 165px;
   }
 }
 
@@ -1103,7 +1091,7 @@ address {
 }
 
 @media screen and (max-width: 767px) {
-  .list-btn_item:nth-child(-n+3) {
+  .list-btn_item:nth-child(-n + 3) {
     margin-bottom: 15px;
   }
 }
@@ -1202,6 +1190,7 @@ address {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
+  overflow-y: scroll;
 }
 
 .progect_link:hover .progect_owerlay,
@@ -1270,7 +1259,7 @@ address {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .backdrop {
     padding: 93px 15px;
   }
@@ -1278,20 +1267,21 @@ address {
 
 @media screen and (min-width: 768px) {
   .backdrop {
-    padding: 207px 159px;
+    padding-top: 208px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    padding: 0;
   }
 }
 
 .modal {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   padding: 40px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  width: 100%;
-  min-height: 100%px;
   background-color: var(--first-logo-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1305,14 +1295,18 @@ address {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    min-height: 609px;
+    height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -1499,10 +1493,16 @@ address {
   padding: 48px 40px;
   background-color: #ffffff;
   transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .js-menu-container.is-open {
   transform: translateX(0);
+}
+
+.js-menu-container.is-open > div:first-child {
+  margin-bottom: 40px;
 }
 
 .menu_btn {
@@ -1567,6 +1567,12 @@ address {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 479px) {
+  .link-tel {
+    font-size: 24px;
+  }
+}
+
 .list-adres_item:first-child {
   margin-bottom: 32px;
 }
@@ -1592,7 +1598,7 @@ address {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .list-social_item {
