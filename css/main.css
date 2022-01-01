@@ -1138,13 +1138,13 @@ address {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: -30px;
+    margin-top: -30px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .progect_item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -1152,7 +1152,7 @@ address {
   .progect_item {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -1163,7 +1163,9 @@ address {
 }
 
 .progect_link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1174,6 +1176,18 @@ address {
 .progect_thumb {
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .progect_img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .progect_img {
+    width: 370px;
+  }
 }
 
 .progect_owerlay {
@@ -1190,13 +1204,18 @@ address {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
-  overflow-y: scroll;
 }
 
 .progect_link:hover .progect_owerlay,
 .progect_link:focus .progect_owerlay {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media screen and (max-width: 480px) {
+  .progect_owerlay {
+    overflow-y: scroll;
+  }
 }
 
 .progect_owerlay-text {
@@ -1242,6 +1261,7 @@ address {
 }
 
 .progect_shild {
+  flex-grow: 1;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
