@@ -71,7 +71,6 @@ header {
   &:hover,
   &:focus {
     color: var(--accent-color);
-    outline: none;
   }
 }
 
@@ -108,9 +107,13 @@ header {
   color: var(--second-text-color);
   display: flex;
   align-items: center;
+  &:first-child {
+    margin-bottom: 10px;
+  }
   @media screen and (min-width: 1200px) {
     &:first-child {
       margin-right: 50px;
+      margin-bottom: 0;
     }
   }
 }
@@ -136,7 +139,6 @@ header {
   align-items: center;
   justify-content: center;
   padding-top: 21px;
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
@@ -146,14 +148,12 @@ header {
   &:hover,
   &:focus {
     color: var(--accent-color);
-    outline: none;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
-    margin-bottom: 0;
   }
 }
 
@@ -171,7 +171,6 @@ header {
   &:hover,
   &:focus {
     color: var(--accent-color);
-    outline: none;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
